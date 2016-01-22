@@ -1,5 +1,5 @@
 FROM sameersbn/ubuntu:14.04.20160121
-MAINTAINER sameer@damagehead.com
+MAINTAINER Joseph Tran <Joseph.Tran@versailles.inra.fr> 
 
 ENV PG_APP_HOME="/etc/docker-postgresql"\
     PG_VERSION=9.4 \
