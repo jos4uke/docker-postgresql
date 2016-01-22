@@ -1,6 +1,10 @@
 FROM sameersbn/ubuntu:14.04.20160121
 MAINTAINER Joseph Tran <Joseph.Tran@versailles.inra.fr> 
 
+# set locales
+RUN localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
+ENV LANG fr_FR.utf8
+
 ENV PG_APP_HOME="/etc/docker-postgresql"\
     PG_VERSION=9.4 \
     PG_USER=postgres \
